@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function SwapToken() {
   return (
-    <div className="relative w-full mt-6 flex flex-col px-8 py-10 justify-center bg-[#000000CC] border border-[#464646] rounded-[10px]">
+    <div className="relative w-full mt-6 flex flex-col px-8 py-10 justify-center bg-[#000000CC] border border-[#464646] rounded-[10px] max-sm:px-6">
       <div className="flex justify-between">
         <p className="font-roboto leading-6 text-[20px] font-[600] whitespace-nowrap text-white">
           SWAP TOKENS
@@ -61,17 +61,17 @@ export default function SwapToken() {
         </div>
 
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <Image src="/swap.png" alt="Logo" width={50} height={50} />
+          <img className='max-sm:w-8 max-sm:h-8' src="/swap.png" alt="Logo" width={50} height={50} />
         </div>
       </div>
       
-      <div className="flex justify-center mt-7">
+      <div className="flex justify-center mt-7 max-sm:mt-16">
         <button className="w-[250px] h-[51px] font-roboto font-[500px] text-[16px] rounded-[8px_0_8px_0] bg-[#9945FF]">
           SWAP TOKENS
         </button>
       </div>
       
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center max-sm:mt-5">
         <div>
           <p className="font-roboto leading-[16.5px] mt-3 text-[14px] font-[400] text-white">
             1 BTC = 32.4039 ETH

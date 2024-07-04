@@ -52,15 +52,15 @@ function CryptoBox() {
                 src={crypto.icon}
                 alt={`${crypto.name} icon`}
               />
-              <p className="ml-3 font-roboto text-white leading-5 text-[18px] font-[500]">
+              <p className="ml-3 font-roboto  leading-5 text-[18px] font-[500]">
                 {crypto.name}/<span className="text-[#666666]">USD</span>
               </p>
             </div>
-            <p className="font-roboto leading-6 text-white text-[20px] font-[600]">
+            <p className="font-roboto leading-6  text-[20px] font-[600]">
               ${crypto.lastTrade}
             </p>
             <p
-              className={`font-roboto leading-6 text-[20px] text-white font-[600] ${
+              className={`font-roboto leading-6 text-[20px]  font-[600] ${
                 crypto.dayPercentage.includes('-') &&
                 crypto.dayPercentage !== '+0.00'
                   ? 'text-[#FF5454]'
